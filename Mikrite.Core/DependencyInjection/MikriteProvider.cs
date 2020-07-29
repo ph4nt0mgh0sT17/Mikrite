@@ -6,10 +6,10 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Mikrite.Core.DependencyInjection
 {
     /// <summary>
-    /// The main Mikrite Dependency Injection entry point.
+    /// The main MikriteProvider Dependency Injection entry point.
     /// Via this class all services are built.
     /// </summary>
-    public static class Mikrite
+    public static class MikriteProvider
     {
         /// <summary>
         /// The container that actually contains all services.
