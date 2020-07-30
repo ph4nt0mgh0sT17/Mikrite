@@ -5,12 +5,16 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>The basic framework for .NET core application only for my personal usage.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <PackageProjectUrl>https://github.com/ph4nt0mgh0sT17/Mikrite</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ph4nt0mgh0sT17/Mikrite</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
     <PackageTags>DependencyInjection</PackageTags>
-    <PackageReleaseNotes>Added the metadata.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added XML comments.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Projects\GithubRepositories\Mikrite\Mikrite.Core\Mikrite.Core.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

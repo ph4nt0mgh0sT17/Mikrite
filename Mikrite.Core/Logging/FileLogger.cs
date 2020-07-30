@@ -78,9 +78,10 @@ namespace Mikrite.Core.Logging
         /// </summary>
         /// <typeparam name="TState">This type parameter is not really used in the application. It's only for sake of the interface.</typeparam>
         /// <param name="logLevel">The log level of the message.</param>
+        /// <param name="eventId">The <see cref="EventId"/> that is not used in the method. It's used only for interface implementation.</param>
         /// <param name="state">This is actually object array that contains 4 elements: message, origin, filePath and lineNumber...</param>
         /// <param name="exception">The exception to be logged after the message.</param>
-        /// <param name="formatter">The formatter <seealso cref="Func{TState, Exception, string}"/>.</param>
+        /// <param name="formatter">The formatter <seealso cref="Func{TInput,TInput,TResult}"/>.</param>
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
             // We do not want to log if the log level is not enough
